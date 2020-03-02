@@ -1,0 +1,89 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Spartan|Press+Start+2P&display=swap");
+@import "./variables.scss";
+
+body {
+  // Spacing
+  margin: 0;
+
+  // Style
+  background-color: #333;
+
+  // Font Style
+  font-family: "Press Start 2P";
+
+  nav {
+    // Layout
+    display: flex;
+    align-items: center;
+
+    // Spacing
+    padding: 0 30px;
+
+    // Sizing
+    height: 60px;
+
+    // Style
+    background-color: #161616;
+    box-shadow: 5px 5px 0 #222;
+
+    // Font Style
+    color: #f1f1f1;
+
+    .title {
+      // Font Style
+      font-size: 22px;
+      color: $title-color;
+      text-decoration: none;
+
+      &:hover {
+        // Style
+        cursor: pointer;
+
+        // Font Style
+        color: $title-hover-color;
+      }
+    }
+  }
+
+  main {
+    // Spacing
+    padding: 30px;
+
+    // Font Style
+    color: #f1f1f1;
+
+    section {
+      h1.title {
+        // Spacing
+        margin: 0 0 30px;
+
+        // Font Style
+        font-size: 16px;
+      }
+    }
+
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 30px;
+      .post {
+        background-color: #222;
+        box-shadow: 5px 5px 0 #131313;
+        padding: 15px;
+        .title {
+          // Spacing
+          margin: 0 0 10px;
+
+          // Font Style
+          font-size: 14px;
+        }
+
+        .content-preview {
+          font-size: 12px;
+          font-family: "Spartan";
+        }
+      }
+    }
+  }
+}
